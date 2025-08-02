@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', sans-serif;
+            color: #2C3E50;
+            background-color: #F5F6F7;
+        }
+        .title-div {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #4B7F52;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .title-div h2 {
+            color: #FFFFFF;
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .title-div::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+        }
+        .ho {
+            width: 50%;
+            background-color: #FFFFFF;
+            padding: 40px 60px;
+            margin: 0 auto;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #4B7F52;
+        }
+        .ho p {
+            line-height: 1.6;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .ho b {
+            color: #4B7F52;
+            font-size: 1.2em;
+        }
+        .ho ul {
+            padding-left: 20px;
+        }
+        .ho ul li {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            position: relative;
+            list-style-type: none;
+            padding-left: 25px;
+        }
+        .ho ul li::before {
+            content: '🌱';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .ho ul li b {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #about {
+            min-height: 900px;
+            padding: 20px;
+            background: linear-gradient(180deg, #F5F6F7 0%, #E8EDF0 100%);
+        }
+
+        .ho:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+            .ho {
+                width: 80%;
+                padding: 30px;
+            }
+            .title-div h2 {
+                font-size: 2em;
+            }
+    </style>
+</head>
+<body>
+    <section id="about">
+        <div class="title-div">
+            <h2>About Us</h2>
+        </div>
+        <div class="ho">
+            <p  style = "font-size:150%";>Welcome to Agronet! We are committed to providing exceptional Agricultural technology with expertise.
+                Our dedicated team of Agriculture professionals strives to ensure the well-being and comfort of every
+                crop we produce.</p>
+            <p><b>Our Mission:</b></p>
+            <p style = "font-size:110%";>At Agronet, our mission is to provide compassionate and comprehensive agricultural services to our
+                community. We strive to promote a healthy and nurturing environment to the crop, focusing on the overall
+                wellness of the fields.</p>
+            <p><b>Core Values:</b></p>
+            <ul>
+                <li><b>Sustainability</b>: Commitment to sustainable practices that promote environmental conservation and minimize ecological impact.</li>
+                <li><b>Integrity </b>: Upholding honesty, transparency, and ethical conduct in all operations and dealings.</li>
+                <li><b>Innovation</b>: Embracing new technologies and methods to enhance productivity, efficiency, and crop quality.</li>
+                <li><b>Community</b>: Supporting local communities, fostering relationships, and contributing positively to society.</li>
+                <li><b>Quality </b>: Ensuring high-quality products and services that meet or exceed customer expectations.</li>
+                <li><b>Responsibility</b>: Taking responsibility for the welfare of employees, animals, land, and resources used in production.</li>
+                <li><b>Continuous Improvement</b>: Striving for ongoing improvement in processes, products, and practices.</li>
+            </ul>
+            <p><b>Our Team:</b></p>
+            <p>Our dedicated team of agriculture professionals, including experienced agro tech engineers, guide, and support
+                staff, works collaboratively to ensure that you receive the best possible care for your crop. We prioritize
+                continuous training and development to stay abreast of the latest machinery.</p>
+        </div>
+    </section>
+</body>
+</html>

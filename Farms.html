@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: grey;
+            color: white;
+        }
+        .farms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .farm {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .farm img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .farm h3 {
+            margin: 0.5rem 0;
+            color: #4CAF50;
+        }
+        .farm:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .farm a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .farm a:hover h3 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farms Showcase</h1>
+        <p>Discover our diverse farms and their offerings</p>
+    </header>
+    <div class="farms">
+        <div class="farm">
+            <a href="Rice.html">
+                <img src="https://images.stockcake.com/public/e/6/9/e6930bfb-b1b0-47dc-b9f8-b9edfe82e620_large/divided-crop-fields-stockcake.jpg" height="500" alt="Crop Fields">
+                <a href = "Crop Fields.html" ><h3>Crop Fields</h3> </a>
+                <p>Organic grains.</p>
+            </a>
+        </div>
+        <div class="farm">
+            <a href="Dairy.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5vE2AUKDDORsHnro_BECrS9oKgYeX93x15w&s" height="500" alt="Dairy Farm">
+                <a href = "Dairy Farm.html" ><h3>Dairy Farm</h3> </a>
+                <p>Dairy and livestock.</p>
+            </a>
+        </div>
+        <div class="farm">
+            <a href="Orchard.html">
+                <img src="https://globebag.com/cdn/shop/articles/GlobeBagCompanyInc-220634-Start-Apple-Orchard-blogbanner1.jpg?v=1682360815" height="500" alt="Orchard Grove">
+                <a href = "Orchad Grove.html"  ><h3>Orchard Grove</h3> </a>
+                <p>Fresh fruits.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

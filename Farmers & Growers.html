@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers and Growers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: url('farmers-banner.jpg') no-repeat center center/cover;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background: #4CAF50;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Farmers and Growers</h1>
+            <p>Honoring the backbone of agriculture and food production</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#values">Our Values</a>
+        <a href="#stories">Farmer Stories</a>
+        <a href="#guidelines">Government Guidelines</a>
+        <a href="#loans">Loan Facility</a>
+        </nav>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Farmers and Growers</h2>
+            <p>Farmers and growers are the lifeblood of our communities, working tirelessly to produce the food that nourishes us. Their dedication, knowledge, and passion for sustainable farming ensure that our tables are filled with fresh and healthy produce.</p>
+        </section>
+        <!-- Values Section -->
+        <section id="values">
+            <h2>Our Core Values</h2>
+            <ul>
+                <li><span class="highlight">Sustainability:</span> Promoting environmentally friendly farming practices.</li>
+                <li><span class="highlight">Community:</span> Building strong connections between farmers and consumers.</li>
+                <li><span class="highlight">Innovation:</span> Embracing modern techniques to increase productivity and reduce waste.</li>
+                <li><span class="highlight">Respect:</span> Honoring the hard work and dedication of our farmers.</li>
+            </ul>
+        </section>
+        <!-- Farmer Stories Section -->
+        <section id="stories">
+            <h2>Inspiring Farmer Stories</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTouhiWyvpki8x1sgIEl383NNHt-MWvYpqaA&s"height="250" alt="Farmer Story 1">
+                    <p><strong>Kishan's Organic Farm:</strong> Growing sustainable produce for over 20 years.</p>
+                </div>
+                <div>
+                    <img src="https://images.caxton.co.za/wp-content/uploads/sites/26/2024/09/farmersawards2_06285-e1727090504543-520x345.jpeg"height="250" alt="Farmer Story 2">
+                    <p><strong>Sara's Dairy Farm:</strong> Providing fresh milk and cheese to local markets.</p>
+                </div>
+                <div>
+                    <img src="https://i0.wp.com/vikalpsangam.org/wp-content/uploads/migrate/Food%20and%20water/murbad1.jpg?fit=500%2C498&ssl=1"height="250" alt="Farmer Story 3">
+                    <p><strong>Green Valley:</strong> A cooperative of growers revolutionizing vegetable farming.</p>
+                </div>
+                <div>
+                    <img src="https://timesofagriculture.in/wp-content/uploads/2023/02/Tula-Ram-Upreti.jpg" height="250"alt="Farmer Story 4">
+                    <p><strong>Ghanashyam's Orchard:</strong> Producing fresh juice from farm-grown fruits for local communities.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Government Guidelines Section -->
+        <section id="guidelines">
+            <h2>Government Guidelines</h2>
+            <p>The government provides detailed guidelines to ensure sustainable and profitable farming. Key highlights include:</p>
+            <ul>
+                <li><span class="highlight">Sustainable Practices:</span> Encouraging organic farming and water conservation techniques.</li>
+                <li><span class="highlight">Subsidies:</span> Offering financial assistance for seeds, fertilizers, and equipment.</li>
+                <li><span class="highlight">Education:</span> Providing training programs on modern farming techniques.</li>
+                <li><span class="highlight">Support Networks:</span> Establishing farmer cooperatives and digital platforms for direct sales.</li>
+            </ul>
+        </section>
+        <!-- Loan Facility Section -->
+        <section id="loans">
+            <h2>Loan Facilities for Farmers</h2>
+            <p>Farmers can avail of various loan schemes to support their agricultural activities. Benefits include:</p>
+            <ul>
+                <li><span class="highlight">Low Interest Rates:</span> Special rates for agricultural loans.</li>
+                <li><span class="highlight">Flexible Repayment:</span> Options aligned with crop cycles.</li>
+                <li><span class="highlight">Purpose-Specific Loans:</span> Covering equipment, irrigation, land development, and more.</li>
+                <li><span class="highlight">Government Backing:</span> Loans supported by government guarantees and insurance.</li>
+            </ul>
+            <p>Contact your nearest agricultural bank or cooperative for more details.</p>
+        </section>
+        
+</body>
+</html>

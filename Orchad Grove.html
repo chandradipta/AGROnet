@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchard Grove</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: url('orchard-banner.jpg') no-repeat center center/cover;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        nav {
+            background: #4CAF50;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Orchard Grove</h1>
+            <p>Fresh Fruits and Vegetables Straight from Nature</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#fruits">Fruits</a>
+        <a href="#vegetables">Vegetables</a>
+         
+    </nav>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Our Orchard</h2>
+            <p>Our orchard is a haven for fresh, organic fruits and vegetables. We cultivate our produce with love and care, ensuring it’s free from harmful chemicals. Explore the vibrant bounty of nature!</p>
+        </section>
+        <!-- Fruits Section -->
+        <section id="fruits">
+            <h2>Our Fresh Fruits</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/apples-at-farmers-market-royalty-free-image-1627321463.jpg"height="200" alt="Apples">
+                    <p><strong>Apples:</strong> Crisp and juicy varieties.</p>
+                </div>
+                <div>
+                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/272/272782/oranges-in-a-box.jpg"height="200" alt="Oranges">
+                    <p><strong>Oranges:</strong> Sweet and refreshing citrus.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBbJ_Sx5e7M64FqcCtAH1pe2EWDc20ZnQPw&s"height="200" alt="Bananas">
+                    <p><strong>Bananas:</strong> Perfect for a quick snack.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eWH5kQrsjt5yvMmadtDoB24cM-772-p1HA&s"height="200" alt="Grapes">
+                    <p><strong>Grapes:</strong> Delicious and full of flavor.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Vegetables Section -->
+        <section id="vegetables">
+            <h2>Our Fresh Vegetables</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUD0UfXYXUdpzKvH3TlEulgbI0siG9Aqi3OA&s"height="200" alt="Carrots">
+                    <p><strong>Carrots:</strong> Sweet and crunchy.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKnbeckETsLM6YFLIp2Q_QSq98OWGUr3_mb4ezPJCYIvTEGeqUr6cKYWXgFQsy9po5jro&usqp=CAU"height="200" alt="Tomatoes">
+                    <p><strong>Tomatoes:</strong> Juicy and ripe.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjLaJq4L4J3FLTGmzOd4qOQjiM3rPUCkqkw&s" height="200"alt="Broccoli">
+                    <p><strong>Broccoli:</strong> Packed with nutrients.</p>
+                </div>
+                <div>
+                    <img src="https://i0.wp.com/thestonesoup.com/wp-content/uploads/53155733592_ce292a7118_c1.jpg?w=680&ssl=1"height="200" alt="Spinach">
+                    <p><strong>Spinach:</strong> Fresh and vibrant greens.</p>
+                </div>
+            </div>
+        </section>
+       
+
+</body>
+</html>

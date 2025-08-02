@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agronet - ROI Calculator</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .header, .section-title {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+    .section-subtitle {
+      color: white;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .card {
+      margin-top: 20px;
+    }
+    .form-section {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    .highlight-box {
+      background-color: #ffeb3b;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <a class="navbar-brand" href="#">
+      <img src="https://myagronet.com/v3/assets/img/v3/logo2.png" width="120" height="40" alt="Agronet Logo">
+    </a>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1 class="mb-0">ROI CALCULATOR</h1>
+    <p class="section-subtitle">5 Steps to Seamlessly Implement AI Advisor to Your Sales or Marketing Strategy</p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container py-4">
+    <form id="roi-form">
+      <div class="row">
+        <!-- Step 1 -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              Step 1 – QuickBooks Integration
+            </div>
+            <div class="card-body form-section">
+              <div class="form-group">
+                <label for="iQBHoursSpent">Hours Spent per Month Entering Sales Receipts and Invoice Payments</label>
+                <input type="number" class="form-control" id="iQBHoursSpent" name="iQBHoursSpent" min="0" required />
+              </div>
+              <div class="form-group">
+                <label for="iQBEmployeeHourly">Employee Time Worth per Hour ($)</label>
+                <input type="number" class="form-control" id="iQBEmployeeHourly" name="iQBEmployeeHourly" min="1" required />
+              </div>
+              <div class="text-right mt-4">
+                <h5>Monthly Savings: <span id="oQBMonthlySavings" class="text-success">$ 0.00</span></h5>
+                <h5>Annual Savings: <span id="oQBAnnualSavings" class="text-success">$ 0.00</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              Step 2 – Merchant Services Program
+            </div>
+            <div class="card-body form-section">
+              <div class="form-group">
+                <label>Are the majority of your customers:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="iCustomerType" id="iCustomerType1" value="Consumer" checked>
+                  <label class="form-check-label" for="iCustomerType1">Consumer</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="iCustomerType" id="iCustomerType2" value="Business">
+                  <label class="form-check-label" for="iCustomerType2">Business</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="iCPTransactions">% of Transactions Processed Card Present</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="iCPTransactions" name="iCPTransactions" min="1" max="100" required>
+                  <div class="input-group-append"><span class="input-group-text">%</span></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="iMonthlySales">Average Monthly Sales ($)</label>
+                <input type="number" class="form-control" id="iMonthlySales" name="iMonthlySales" min="1" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="iAverageTicket">Average Ticket ($)</label>
+                  <input type="number" class="form-control" id="iAverageTicket" name="iAverageTicket" min="1" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="iMonthlyTransactions">OR Monthly # of Transactions</label>
+                  <input type="number" class="form-control" id="iMonthlyTransactions" name="iMonthlyTransactions" min="1" />
+                </div>
+              </div>
+              <div class="text-right mt-4">
+                <h5>Monthly Savings: <span id="oMSPMonthlySavings" class="text-success">$ 0.00</span></h5>
+                <h5>Annual Savings: <span id="oMSPAnnualSavings" class="text-success">$ 0.00</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Combined Totals & Actions -->
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <div class="highlight-box mb-3">
+            <h4>Total Monthly Savings: <span id="oTotalMonthlySavings" class="font-weight-bold">$ 0.00</span></h4>
+            <h4>Total Annual Savings: <span id="oTotalAnnualSavings" class="font-weight-bold">$ 0.00</span></h4>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg mx-2">Calculate Savings</button>
+          <button type="reset" id="resetForm" class="btn btn-secondary btn-lg mx-2">Reset Form</button>
+          <p class="mt-3">
+            <a href="#" class="small">Send Results to a Friend</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <p class="text-muted">
+            Most merchants find that the monthly savings more than pays for the monthly cost of the services provided by Avalon Payments,
+            which includes the QuickBooks Integration and Merchant Services Program.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("roi-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Step 1 - QuickBooks Integration
+        const qbHours = parseFloat(document.getElementById("iQBHoursSpent").value) || 0;
+        const qbHourlyRate = parseFloat(document.getElementById("iQBEmployeeHourly").value) || 0;
+        const qbMonthly = qbHours * qbHourlyRate;
+        const qbAnnual = qbMonthly * 12;
+
+        document.getElementById("oQBMonthlySavings").textContent = `$ ${qbMonthly.toFixed(2)}`;
+        document.getElementById("oQBAnnualSavings").textContent = `$ ${qbAnnual.toFixed(2)}`;
+
+        // Step 2 - Merchant Services Program
+        const customerType = document.querySelector('input[name="iCustomerType"]:checked').value;
+        const cpPercent = parseFloat(document.getElementById("iCPTransactions").value) || 0;
+        const monthlySales = parseFloat(document.getElementById("iMonthlySales").value) || 0;
+
+        let mspMonthly = 0;
+        if (monthlySales > 0) {
+          const rate = (customerType === "Consumer") ? 0.005 : 0.003;
+          const cardPresentRatio = cpPercent / 100;
+          mspMonthly = monthlySales * rate * cardPresentRatio;
+        }
+        const mspAnnual = mspMonthly * 12;
+
+        document.getElementById("oMSPMonthlySavings").textContent = `$ ${mspMonthly.toFixed(2)}`;
+        document.getElementById("oMSPAnnualSavings").textContent = `$ ${mspAnnual.toFixed(2)}`;
+
+        // Totals
+        const totalMonthly = qbMonthly + mspMonthly;
+        const totalAnnual = qbAnnual + mspAnnual;
+        document.getElementById("oTotalMonthlySavings").textContent = `$ ${totalMonthly.toFixed(2)}`;
+        document.getElementById("oTotalAnnualSavings").textContent = `$ ${totalAnnual.toFixed(2)}`;
+      });
+
+      document.getElementById("resetForm").addEventListener("click", function () {
+        form.reset();
+        const outputs = [
+          "oQBMonthlySavings", "oQBAnnualSavings",
+          "oMSPMonthlySavings", "oMSPAnnualSavings",
+          "oTotalMonthlySavings", "oTotalAnnualSavings"
+        ];
+        outputs.forEach(id => {
+          document.getElementById(id).textContent = "$ 0.00";
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Fields</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: url('agriculture-banner.jpg') no-repeat center center/cover;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background: #4CAF50;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Crop Fields</h1>
+            <p>Harvesting the staples that feed the world</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#rice">Rice</a>
+        <a href="#corn">Corn</a>
+        <a href="#wheat">Wheat</a>
+        
+    </nav>
+    <main>
+        <!-- Rice Section -->
+        <section id="rice">
+            <h2>Rice </h2>
+            <p>Rice is a staple food for over half of the global population. Our sustainable rice farming practices ensure quality and yield.</p>
+            <div class="grid">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRIS082NAGFGSu7S_dn5Vz205r_cB7XUz1nA&s" height="200"alt="Rice Sowing">
+                    <p><strong>Sowing:</strong> Planting high-quality seeds.</p>
+                </div>
+                <div>
+                    <img src="https://eos.com/wp-content/uploads/2023/04/rice-field.jpg" height="200"alt="Rice Cultivation">
+                    <p><strong>Growth:</strong> Nurturing crops with care.</p>
+                </div>
+                <div>
+                    <img src="https://img.freepik.com/premium-photo/farmers-are-harvesting-rice-hot-sun-nan-thailand-25-october-2018_34032-102.jpg"height="200" alt="Rice Harvesting">
+                    <p><strong>Harvesting:</strong> Bringing in the grains.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Corn Section -->
+        <section id="corn">
+            <h2>Corn </h2>
+            <p>Corn is a versatile crop used in foods, livestock feed, and biofuels. Our farms produce high-quality corn for global markets.</p>
+            <div class="grid">
+                <div>
+                    <img src="https://extension.umn.edu/sites/extension.umn.edu/files/styles/crop_banner_image_crop/public/planting.jpg?h=4aaa1bc9&itok=79u9dlig" height="200"alt="Corn Sowing">
+                    <p><strong>Sowing:</strong> Planting robust corn seeds.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqtxHhlvdntJGHKXmHecQj6LDDznlQ0EfW60QcRihu_eGSuVbzQQiz9R3xYaUQYBOmAM&usqp=CAU"height="200" alt="Corn Growth">
+                    <p><strong>Growth:</strong> Ensuring healthy stalks and ears.</p>
+                </div>
+                <div>
+                    <img src="https://images.squarespace-cdn.com/content/v1/57bb73f5414fb501474ba1bc/1531819227281-D2CN8TBWI9WSP95H1YZ7/shutterstock_484722151.jpg?format=1500w"height="200" alt="Corn Harvesting">
+                    <p><strong>Harvesting:</strong> Collecting golden kernels.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Wheat Section -->
+        <section id="wheat">
+            <h2>Wheat </h2>
+            <p>Wheat is the cornerstone of bread and bakery products worldwide. Our wheat fields are managed with precision for top-grade output.</p>
+            <div class="grid">
+                <div>
+                    <img src="https://motionarray.imgix.net/preview-1003480-ZX2CN4IVHZ-high_0008.jpg?w=660&q=60&fit=max&auto=format"height="200" alt="Wheat Sowing">
+                    <p><strong>Sowing:</strong> Preparing the soil and planting seeds.</p>
+                </div>
+                <div>
+                    <img src="https://thefarmersjournal.com/wp-content/uploads/2023/06/Wheat-Farming-in-Africa-A-Comprehensive-Guide-to-Favorable-Regions-and-Successful-Cultivation-1.jpg"height="200" alt="Wheat Growth">
+                    <p><strong>Growth:</strong> Monitoring fields for optimal yield.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDciliocgynhewVDpjcGqroUTrpUe0H9PkpudH88HPqiZGJYZYDSLxAKl4HquZiPaZW-w&usqp=CAU"height="200" alt="Wheat Harvesting">
+                    <p><strong>Harvesting:</strong> Reaping golden fields.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+     
+</body>
+</html>

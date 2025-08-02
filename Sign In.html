@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign IN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .company-header {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c5f2d;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #97bc62;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .terms-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .signup-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        
+        .signup-text {
+            color: #666;
+            margin-bottom: 10px;
+	    text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="company-header">
+        AgroNet
+    </div>
+    
+    <div class="form-container">
+        <div class="form-group">
+            <label for="userid">User ID</label>
+            <input type="text" id="userid" name="userid" placeholder = "Enter your User ID here" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder = "Enter your Password" required>
+        </div>
+        
+        <div class="terms-group">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the Terms and Conditions</label>
+        </div>
+        
+        <a href = "Main Page wo Sign In.html"><button class="button">Sign In</button></a>
+    </div>
+    
+    <div class="signup-section">
+        <p class="signup-text">Don't have an account? Create one now!</p>
+        <a href = "Sign Up.html"><button class="button">Create your Agronet account</button> </a>
+    </div>
+</body>
+</html>

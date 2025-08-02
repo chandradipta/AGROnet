@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Beverages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: url('food-banner.jpg') no-repeat center center/cover;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background:green;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: green;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            color: green;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+       
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff6f00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Food and Beverages</h1>
+            <p>Fresh and sustainable products directly from farmers and growers</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#products">Our Products</a>
+        <a href="#values">Our Values</a>
+        
+    </nav>
+    <main>
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Our Food and Beverage Products</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://organicboosting.bio/wp-content/uploads/2024/04/organic-rice.jpg" height="200" alt="Rice">
+                    <p><strong>Rice:</strong> Premium quality grains, perfect for every meal.</p>
+                </div>
+                <div>
+                    <img src="https://vegetablerecipes.com/wp-content/uploads/2022/07/How-to-Steam-Corn-5-1-of-1.jpg"height="200"  alt="Corn">
+                    <p><strong>Corn:</strong> Fresh and sweet, ideal for snacks and meals.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhmhR4eel5jA-kEkkiTD0yRkqaj7ShVgjTA&s"height="200"  alt="Wheat">
+                    <p><strong>Wheat:</strong> High-quality wheat for bread, pasta, and more.</p>
+                </div>
+                <div>
+                    <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg" alt="Dairy">
+                    <p><strong>Dairy Products:</strong> Fresh milk, cheese, and butter from our farms.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdPRxdwkEUQ0moIGkpJwtjLDV9ZomWQMME6Q&s"height="200"  alt="Fruits">
+                    <p><strong>Fruits:</strong> Juicy and ripe, sourced directly from orchards.</p>
+                </div>
+                <div>
+                    <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature_thumb.jpg?sfvrsn=aa2422a6_4"height="200"  alt="Vegetables">
+                    <p><strong>Vegetables:</strong> Freshly picked and full of nutrients.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzYC4mFnT0LB1AmRS86Lx0T4favmepzj_Bw&s"height="200" alt="Juice">
+                    <p><strong>Juices:</strong> Natural and refreshing drinks from farm-grown fruits.</p>
+                </div>
+		<div>
+                    <img src="https://tinyurl.com/y29u6wkz"height="200" alt="Juice">
+                    <p><strong>Tea:</strong>A popular beverage, cultivated globally, offering economic and social value.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Values Section -->
+        <section id="values">
+            <h2>Our Core Values</h2>
+            <ul>
+                <li><span class="highlight">Freshness:</span> Delivering products as fresh as possible.</li>
+                <li><span class="highlight">Sustainability:</span> Supporting eco-friendly farming and processing.</li>
+                <li><span class="highlight">Community Support:</span> Empowering local farmers and growers.</li>
+                <li><span class="highlight">Quality:</span> Ensuring top-notch products for every customer.</li>
+            </ul>
+         
+</body>
+</html>
