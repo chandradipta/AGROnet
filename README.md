@@ -1,4 +1,5 @@
 🌾 AGROnet – Smart Agriculture & Supply Chain Platform
+
 AGROnet is a modern, web-based agricultural management and supply chain platform built to support farmers, growers, logistics providers, and buyers across the entire agri-ecosystem. Designed with scalability and user-friendliness in mind, AGROnet facilitates seamless interaction, transparency, and traceability in agricultural operations.
 
 This multi-page application is built entirely using HTML, CSS, and JavaScript, and represents a static prototype of a full-scale digital agriculture solution. It includes dedicated sections for farmers, crop monitoring, food & beverage logistics, orchard management, dairy farms, and more.
